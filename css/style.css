@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Limelight&family=Poiret+One&display=swap');
+
+/* reset all styles */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: var(--main-font);
+   font-size: 100%;
+   line-height: 1.5;
+   color: var(--main-text-color);
+   background-color: var(--background);
+   outline: none;
+   border: none;
+   transition: all 0.3s ease-in-out;
+   text-decoration: none;
+   list-style: none;
+   text-align: center;
+}
+
+/* root element */
+:root {
+	scroll-behavior: smooth;
+
+	/* Variables */
+	--background: #000013;
+	--main-text-color: #D0D3D2;
+	--highlight-text-color: #32DDD0;
+	--metal-darker: #616161;
+	--metal-dark: #919191;
+	--metal: #D0D3D2;
+	--success: #32DD00;
+	--error: #DD0032;
+	--warning: #FFD333;
+	--main-font: "Poiret One", arial;
+	--secondary-font: "Limelight", cursive;
+}
