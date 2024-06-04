@@ -12,7 +12,6 @@
    background-color: var(--background);
    outline: none;
    border: none;
-   transition: all 0.3s ease-in-out;
    text-decoration: none;
    list-style: none;
 }
@@ -40,7 +39,7 @@
 .footer {
 	min-height: 5rem;
 	padding: 1rem 2rem;
-	background-color: var(--color-primary);
+	background-color: var(--background);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -60,28 +59,14 @@
 	padding: 0 1rem;
 }
 
-.footer-link a {
-	color: var(--color-text-dark);
+.footer-link a, a:hover, a:active, a:visited, a:focus, .copyright {
+	color: var(--color-primary);
 }
 
 .footer-link a:hover {
-	color: var(--color-text-dark);
 	font-style: italic;
-}
-
-.footer-link a:active {
-	color: var(--color-text-dark);
-}
-
-.footer-link a:visited {
-	color: var(--color-text-dark);
-}
-
-.footer-link a:focus {
-	color: var(--color-text-dark);
 }
 
 .copyright {
 	font-size: 0.8rem;
-	color: var(--color-text-dark);
 }
