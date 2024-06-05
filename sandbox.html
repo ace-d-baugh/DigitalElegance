@@ -4,29 +4,54 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Cage within</title>
-      <link rel="stylesheet" type="text/css" href="/public/styles/cage.css" />
-      <script type="text/javascript" src="script.js"></script>
+		<link rel="stylesheet" type="text/css" href="/public/styles/cage.css" />
 	</head>
 	<body>
 		<div class="cube-container">
-			<div class="panel top">
-            <img src="/public/img/wall-01.jpeg" />
-         </div>
-			<div class="panel bottom">
-            <img src="/public/img/wall-02.jpeg" />
-         </div>
-			<div class="panel left">
-            <img src="/public/img/wall-03.jpeg" />
-         </div>
-			<div class="panel right">
-            <img src="/public/img/wall-04.jpeg" />
-         </div>
-			<div class="panel front">
-            <img src="/public/img/wall-05.jpeg" />
-         </div>
-			<div class="panel back">
-            <img src="/public/img/wall-06.jpeg" />
-         </div>
+			<div class="cube">
+				<div class="panel top">
+					<img src="/public/img/wall-01.jpeg" />
+				</div>
+				<div class="panel bottom">
+					<img src="/public/img/wall-02.jpeg" />
+				</div>
+				<div class="panel left">
+					<img src="/public/img/wall-03.jpeg" />
+				</div>
+				<div class="panel right">
+					<img src="/public/img/wall-04.jpeg" />
+				</div>
+				<div class="panel front">
+					<img src="/public/img/wall-05.jpeg" />
+				</div>
+				<div class="panel back">
+					<img src="/public/img/wall-06.jpeg" />
+				</div>
+			</div>
 		</div>
+		<script>
+			const cube = document.querySelector('.cube');
+			let mouseX = 0;
+			let mouseY = 0;
+			let rotationX = 0;
+			let rotationY = 0;
+
+			document.addEventListener('mousedown', (e) => {
+				mouseX = e.clientX;
+				mouseY = e.clientY;
+				document.addEventListener('mousemove', rotateCube);
+				document.addEventListener('mouseup', () => {
+					document.removeEventListener('mousemove', rotateCube);
+				});
+			});
+
+			function rotateCube(e) {
+				const dx = e.clientX - mouseX;
+				const dy = e.clientY - mouseY;
+				rotationX += dy * 0.01;
+				rotationY += dx * 0.01;
+				cube.style.transform = `rotateX(${rotationX}deg) rotateY(${rotationY}deg)`;
+			}
+		</script>
 	</body>
 </html>
