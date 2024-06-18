@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Limelight&family=Poiret+One&display=swap');
+@import url("https://www.nerdfonts.com/assets/css/webfont.css");
 
 /* reset all styles */
 * {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-   font-family: var(--font-primary);
-   font-size: 100%;
-   line-height: 1.5;
-   color: var(--color-primary);
-   background-color: var(--background);
-   outline: none;
-   border: none;
-   text-decoration: none;
-   list-style: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: var(--font-primary);
+	font-weight: bold;
+	font-size: 100%;
+	line-height: 1;
+	color: var(--color-primary);
+	outline: none;
+	border: none;
+	text-decoration: none;
 }
 
 /* root element */
@@ -22,20 +22,138 @@
 
 	/* Variables */
 	--background: #000013;
-	--color-primary: #D0D3D2;
-	--color-accent: #32DDD0;
+	--color-primary: #d0d3d2;
+	--color-accent: #32ddd0;
 	--metal-darker: #616161;
 	--metal-dark: #919191;
-	--metal: #D0D3D2;
-	--success: #32DD00;
-	--error: #DD0032;
-	--warning: #FFD333;
-	--font-primary: "Poiret One", arial;
-	--font-emphasis: "Limelight", cursive;
+	--metal: #d0d3d2;
+	--success: #32dd00;
+	--error: #dd0032;
+	--warning: #ffd333;
+	--font-primary: 'Poiret One', arial;
+	--font-emphasis: 'Limelight', cursive;
 }
 
+/* bootstrap overrides */
 
-/* Footer */
+.navbar-dark, .navbar-brand, .bg-primary {
+	background-color: var(--background) !important;
+	color: var(--color-primary) !important;
+}
+
+.navbar-toggler {
+	width: 20px;
+	height: 20px;
+	position: relative;
+	transition: .5s ease-in-out;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+	outline: none;
+	box-shadow: none;
+	border: 0;
+}
+
+.navbar-toggler span {
+	margin: 0;
+	padding: 0;
+}
+
+.toggler-icon { 
+	display: block;
+	position: absolute;
+   height: 3px;
+	width: 100%;
+	background-color: var(--color-primary);
+	border-radius: 1px;
+	opacity: 1;
+	transform: rotate(0deg);
+	transition:.25s ease-in-out;
+}
+
+.middle-bar {
+	margin-top: 0px;
+}
+
+.navbar-toggler .top-bar {
+	margin-top: 0px;
+	transform: rotate(135deg);
+}
+
+.navbar-toggler .middle-bar {
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+	margin-top: 0px;
+   transform: rotate(-135deg);
+}
+
+.navbar-toggler.collapsed .top-bar {
+	margin-top: -20px;
+	transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+   opacity: 1;
+   filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+	margin-top: 20px;
+	transform: rotate(0deg);
+}
+
+.icon-name {
+   display: none;
+	vertical-align: top;
+}
+
+.show .icon-name {
+	display: flex;
+}
+
+/* Body */
+body {
+	min-height: 100vh;
+	margin: 0;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	background-color: var(--background);
+}
+
+.primary {
+	color: var(--color-primary);
+}
+
+/* Header Components */
+header-component {
+	--header-height: 80px;
+}
+
+.navbar a {
+	color: var(--color-primary);
+   text-decoration: none;
+}
+
+.navbar-nav a:hover,
+.navbar i:hover,
+.icon-name:hover {
+   color: var(--color-accent);
+
+}
+
+/* Container */
+.container {
+	min-height: calc(100vh - var(--header-height));
+}
+
+/* Footer 
 .footer {
 	min-height: 5rem;
 	padding: 1rem 2rem;
@@ -59,7 +177,12 @@
 	padding: 0 1rem;
 }
 
-.footer-link a, a:hover, a:active, a:visited, a:focus, .copyright {
+.footer-link a,
+a:hover,
+a:active,
+a:visited,
+a:focus,
+.copyright {
 	color: var(--color-primary);
 }
 
@@ -69,4 +192,4 @@
 
 .copyright {
 	font-size: 0.8rem;
-}
+}*/
