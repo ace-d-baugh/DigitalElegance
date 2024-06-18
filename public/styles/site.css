@@ -8,7 +8,7 @@
 	box-sizing: border-box;
 	font-family: var(--font-primary);
 	font-weight: bold;
-	font-size: 100%;
+	font-size: 105%;
 	line-height: 1;
 	color: var(--color-primary);
 	outline: none;
@@ -144,7 +144,9 @@ header-component {
 
 .navbar-nav a:hover,
 .navbar i:hover,
-.icon-name:hover {
+.icon-name:hover,
+.footer-link a:hover,
+.footer-link i:hover {
    color: var(--color-accent);
 
 }
@@ -177,7 +179,6 @@ a:focus,
 
 .footer-link a:hover {
 	font-style: italic;
-	color: var(--color-accent);
 }
 
 .copyright {
