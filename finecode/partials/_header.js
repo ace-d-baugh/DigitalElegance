@@ -14,33 +14,48 @@ class Header extends HTMLElement {
          </button>
          <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-               <li class="nav-item mx-2 my-1 active"><a href="index.html">Home</a></li>
-               <li class="nav-item mx-2 my-1"><a href="about.html">About</a></li>
-               <li class="nav-item mx-2 my-1"><a href="projects.html">Projects</a></li>
-               <li class="nav-item mx-2 my-1"><a href="resume.html">Resume/CV</a></li>
-               <li class="nav-item mx-2 my-1"><a href="index.html#contact">Contact</a></li>
-                  <li class="nav-item mx-2 my-1">
-                     <a href="https://github.com/ace-d-baugh" target="_blank" >
-                        <i class="nf nf-cod-github d-flex">
-                           <span class="icon-name ml-1">GitHub</span>
-                        </i>
-                     </a>
-                  </li>
-                  <li class="nav-item mx-2 my-1">
-                     <a href="https://www.linkedin.com/in/ace-d-baugh/" target="_blank">
-                        <i class="nf nf-md-linkedin d-flex">
-                           <span class="icon-name ml-1">LinkedIn</span>
-                        </i>
-                     </a>
-                  </li>
-                  <li class="nav-item mx-2 my-1">
-                     <a href="https://x.com/acieffe" target="_blank">
-                        <i class="nf nf-fa-twitter d-flex">
-                           <span class="icon-name ml-1">Twitter/X</span>
-                        </i>
-                     </a>
-                  </li>
-               </u>
+               <li class="nav-item mx-2 my-1 active">
+                  <a href="index.html">
+                     <i class="nf nf-fa-house d-flex">
+                        <span class="icon-name ml-1">Home</span>
+                     </i>
+                  </a>
+               </li>
+               <li class="nav-item mx-2 my-1 active">
+                  <a href="index.html">
+                     <i class="nf nf-oct-person_fill d-flex">
+                        <span class="icon-name ml-1">About</span>
+                     </i>
+                  </a>
+               </li>
+               <li class="nav-item mx-2 my-1 active">
+                  <a href="index.html">
+                     <i class="nf nf-dev-redis d-flex">
+                        <span class="icon-name ml-1">Projects</span>
+                     </i>
+                  </a>
+               </li>
+               <li class="nav-item mx-2 my-1 active">
+                  <a href="index.html">
+                     <i class="nf nf-oct-log d-flex">
+                        <span class="icon-name ml-1">Resume/CV</span>
+                     </i>
+                  </a>
+               </li>
+               <li class="nav-item mx-2 my-1 active">
+                  <a href="index.html">
+                     <i class="nf nf-fa-book_journal_whills d-flex">
+                        <span class="icon-name ml-1">Blog</span>
+                     </i>
+                  </a>
+               </li>
+               <li class="nav-item mx-2 my-1 active">
+                  <a href="index.html">
+                     <i class="nf nf-md-email_newsletter d-flex">
+                        <span class="icon-name ml-1">Contact</span>
+                     </i>
+                  </a>
+               </li>
             </ul>
          </div>
       </nav>

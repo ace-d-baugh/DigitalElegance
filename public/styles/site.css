@@ -57,6 +57,7 @@
 	outline: none;
 	box-shadow: none;
 	border: 0;
+	cursor: pointer;
 }
 
 .navbar-toggler span {
@@ -74,6 +75,10 @@
 	opacity: 1;
 	transform: rotate(0deg);
 	transition:.25s ease-in-out;
+}
+
+.navbar-toggler:hover .toggler-icon {
+	background-color: var(--color-accent);
 }
 
 .middle-bar {
@@ -110,15 +115,6 @@
 	transform: rotate(0deg);
 }
 
-.icon-name {
-   display: none;
-	vertical-align: top;
-}
-
-.show .icon-name {
-	display: flex;
-}
-
 /* Body */
 body {
 	min-height: 100vh;
@@ -146,7 +142,8 @@ header-component {
 .navbar i:hover,
 .icon-name:hover,
 .footer-link a:hover,
-.footer-link i:hover {
+.footer-link i:hover,
+.footer-link span:hover {
    color: var(--color-accent);
 
 }
@@ -179,6 +176,7 @@ a:focus,
 
 .footer-link a:hover {
 	font-style: italic;
+	text-decoration: none;
 }
 
 .copyright {
