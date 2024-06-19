@@ -43,28 +43,6 @@
 	color: var(--color-primary) !important;
 }
 
-.btn-primary {
-	background-color: var(--color-primary) !important;
-   color: var(--background) !important;
-	border: 3px groove var(--color-primary) !important;
-}
-
-.btn-primary:hover {
-   background-color: var(--background) !important;
-   color: var(--color-primary) !important;
-}
-
-.btn-secondary {
-	background-color: var(--background) !important;
-   color: var(--color-primary) !important;
-	border: 3px groove var(--color-primary) !important;
-}
-
-.btn-secondary:hover {
-   background-color: var(--color-accent) !important;
-   color: var(--background) !important;
-}
-
 .navbar-brand {
 	font-size: 1.75rem;
 }
