@@ -43,11 +43,12 @@
 	color: var(--color-primary) !important;
 }
 
+
 .navbar-toggler {
-	width: 20px;
-	height: 20px;
-	position: relative;
+	height: 50px;
+	width: 50px;
 	transition: .5s ease-in-out;
+	position: relative;
 }
 
 .navbar-toggler,
@@ -61,7 +62,7 @@
 }
 
 .navbar-toggler span {
-	margin: 0;
+	margin: 0 0 0 -.25rem;
 	padding: 0;
 }
 
@@ -69,7 +70,7 @@
 	display: block;
 	position: absolute;
    height: 3px;
-	width: 100%;
+	width: 70%;
 	background-color: var(--color-primary);
 	border-radius: 1px;
 	opacity: 1;
@@ -79,6 +80,10 @@
 
 .navbar-toggler:hover .toggler-icon {
 	background-color: var(--color-accent);
+}
+
+.navbar-toggler:hover {
+	border: 1px solid var(--color-accent);
 }
 
 .middle-bar {
@@ -138,12 +143,9 @@ header-component {
    text-decoration: none;
 }
 
-.navbar-nav a:hover,
-.navbar i:hover,
-.icon-name:hover,
-.footer-link a:hover,
-.footer-link i:hover,
-.footer-link span:hover {
+li a:hover,
+li a:hover i,
+li a:hover span {
    color: var(--color-accent);
 
 }
