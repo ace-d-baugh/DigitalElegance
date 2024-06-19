@@ -43,6 +43,9 @@
 	color: var(--color-primary) !important;
 }
 
+.navbar-brand {
+	font-size: 1.75rem;
+}
 
 .navbar-toggler {
 	height: 50px;
@@ -62,7 +65,7 @@
 }
 
 .navbar-toggler span {
-	margin: 0 0 0 -.25rem;
+	margin: 0 0 0 -.35rem;
 	padding: 0;
 }
 
