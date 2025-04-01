@@ -19,14 +19,14 @@ class Footer extends HTMLElement {
             <li class="footer-link  mx-2">
                <a href="https://github.com/ace-d-baugh" target="_blank" >
                   <i class="nf nf-fa-github d-flex">
-                     <span class="ml-1">My GitHub</span>
+                     <span class="ml-1">GitHub</span>
                   </i>
                </a>
             </li>
             <li class="footer-link  mx-2">
-               <a href="https://www.linkedin.com/in/ace-baugh/" target="_blank">
+               <a href="https://www.linkedin.com/in/ace-d-baugh/" target="_blank">
                   <i class="nf nf-md-linkedin d-flex">
-                     <span class="ml-1">My LinkedIn</span>
+                     <span class="ml-1">LinkedIn</span>
                   </i>
                </a>
             </li>

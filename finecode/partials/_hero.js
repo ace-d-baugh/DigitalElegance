@@ -10,8 +10,8 @@ class Hero extends HTMLElement {
       <div class="hero">
          <div class="hero-image"></div>
          <div class="hero-text">
-            <h1 class="hero-title">Ace Baugh</h1>
-            <h2 class="hero-subtitle">Full Stack Web Developer</h2>
+            <h1 class="hero-title">Elevate Your Digital Success</h1>
+            <h4 class="hero-subtitle">Expert full-stack web solutions driving business growth and online success with Digital Elegance.</h4>
             <button>
                <span class="text">About Me</span>
                <span class="shimmer"></span>
