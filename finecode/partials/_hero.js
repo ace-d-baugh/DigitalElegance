@@ -7,7 +7,7 @@ class Hero extends HTMLElement {
 		let year = new Date().getFullYear();
 
 		this.innerHTML = `
-      <div class="hero">
+      <div class="hero px-5">
          <div class="hero-image"></div>
          <div class="hero-text">
             <h1 class="hero-title">Elevate Your Digital Success</h1>
